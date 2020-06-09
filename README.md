@@ -4,7 +4,7 @@ Removes docker container log entries that are older than `$PERIOD` amount of day
 
 Helps fulfil business requirements where logs may not be older than a certain amount of days.
 
-## Why and what is it
+## What it does
 
 Docker has some log rotation options, but they are based on file size.
 
