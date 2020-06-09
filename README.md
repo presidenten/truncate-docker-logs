@@ -21,7 +21,7 @@ The docker container needs to run on every node in the cluster.
 
 In kubernetes this is handled by a `DaemonSet` with tolerations that accepts most taints.
 
-A Kubernetes yaml file is available in `./kubernetes/truncate-logs-daemonset.yaml`.
+A Kubernetes yaml file is available in [`./kubernetes/truncate-logs-daemonset.yaml`.](https://github.com/presidenten/truncate-docker-logs/blob/master/kubernetes/truncate-logs-daemonset.yaml)
 
 The yaml-file has a few values that can be adjusted to taste. The most common ones are available in a ConfigMap at the top of the yaml file:
 - The amount of days to keep logs
