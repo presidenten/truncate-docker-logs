@@ -5,7 +5,7 @@ set -e
 REPO=presidenten
 
 IMAGE_NAME=truncate-docker-logs
-IMAGE_VERSION=1.0.0
+IMAGE_VERSION=1.0.1
 
 DOCKER_BUILDKIT=1 docker image build -t ${IMAGE_NAME}:${IMAGE_VERSION} .
 
