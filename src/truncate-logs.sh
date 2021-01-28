@@ -26,4 +26,4 @@ function truncate-docker-log-file {
 export -f truncate-docker-log-file
 
 echo "Truncating logs to $PERIOD days"
-find /app -name '*-json.log' -exec bash -c 'clean-docker-log-file "$0"; truncate-docker-log-file "$0"' {} \;
+find /app -name '*-json.log' -exec bash -c 'truncate-docker-log-file "$0"' {} \;
